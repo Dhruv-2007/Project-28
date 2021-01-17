@@ -30,7 +30,7 @@ function setup(){
 	mango3 = new Mango(800,280,25);
 	mango4 = new Mango(1000,250,25);
 	mango5 = new Mango(670,300,25);
-    mango6 = new Mango(700,200,25);
+        mango6 = new Mango(700,200,25);
 
 	stone = new Stone(240,500,25);
 
@@ -55,7 +55,6 @@ function draw() {
   mango4.display();
   mango5.display();
   mango6.display();
-  mango6.display();
 
   stone.display();
 
@@ -66,6 +65,7 @@ function draw() {
   detectCollision(stone,mango3);
   detectCollision(stone,mango4);
   detectCollision(stone,mango5);
+  detectCollision(stone,mango6);
 
   drawSprites();
 
